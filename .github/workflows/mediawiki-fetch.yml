@@ -27,6 +27,7 @@ jobs:
           MW_USERNAME: ${{ secrets.MW_USERNAME }}
           MW_PASSWORD: ${{ secrets.MW_PASSWORD }}
           MW_ENDPOINT: ${{ secrets.MW_ENDPOINT }}
+          MW_API: ${{ secrets.MW_API }}
           MW_SOURCE_PAGE: "Template:編集テスト/preload"
           MW_DIST_PAGE: "Minecraft Japan Wiki:編集テスト"
         run: node actions/post.mjs

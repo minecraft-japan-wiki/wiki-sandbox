@@ -3,7 +3,7 @@ import * as core from "@actions/core";
 import * as github from "@actions/github";
 
 const MW_ENDPOINT = process.env.MW_ENDPOINT;
-const MW_API = `${MW_ENDPOINT}w/api.php`;
+const MW_API = process.env.MW_API;
 const MW_USERNAME = process.env.MW_USERNAME;
 const MW_PASSWORD = process.env.MW_PASSWORD;
 const MW_DIST_PAGE = process.env.MW_DIST_PAGE;
